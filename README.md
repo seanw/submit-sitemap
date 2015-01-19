@@ -13,7 +13,7 @@ To run:
 
 `require('submit-sitemap').submitSitemap("http://www.example.com",  function(err) { });`
 
-The callback will indicate an error if the sitemap URL could not be reached or any of the sitemap submission attempts fail.
+The `err` variable of the callback function will be defined if the sitemap URL could not be reached or any of the of the sitemap submission attempts failed.
 
 # License
 
