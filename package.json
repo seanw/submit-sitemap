@@ -1,0 +1,37 @@
+{
+  "name": "submit-sitemap",
+  "version": "0.1.0",
+  "description": "Submits a sitemap XML file to Google and Bing. Use after your site content has changed to encourage search engines to recrawl your site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanw/submit-sitemap"
+  },
+  "keywords": [
+    "sitemap",
+    "submit",
+    "search",
+    "engine",
+    "seo",
+    "google",
+    "bing"
+  ],
+  "author": "Sean Wilson <sw@seanw.org> (https://www.seanw.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanw/submit-sitemap/issues"
+  },
+  "homepage": "https://github.com/seanw/submit-sitemap",
+  "dependencies": {
+    "async": "^0.9.0",
+    "request": "^2.51.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "nock": "^0.57.0",
+    "should": "^4.6.1"
+  }
+}
