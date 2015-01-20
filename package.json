@@ -1,6 +1,6 @@
 {
   "name": "submit-sitemap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Submits a sitemap XML file to Google and Bing. Use after your site content has changed to encourage search engines to recrawl your site.",
   "main": "index.js",
   "scripts": {
