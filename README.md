@@ -32,7 +32,7 @@ On success, the `err` variable will be undefined. If the sitemap URL could not b
 
 To run the test suite:
 
-`npm test`
+    npm test
 
 # License
 
