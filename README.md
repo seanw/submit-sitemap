@@ -1,9 +1,7 @@
 submit-sitemap module for Node.js
 ==
 
-<img src="https://travis-ci.org/seanw/submit-sitemap.svg?branch=master" alt="Travis CI build status">
-
-<img src="https://badge.fury.io/js/submit-sitemap.svg" alt="Version badge">
+<img src="https://travis-ci.org/seanw/submit-sitemap.svg?branch=master" alt="Travis CI build status"> <img src="https://badge.fury.io/js/submit-sitemap.svg" alt="Version badge">
 
 Module to submit a sitemap XML file to [Google](http://www.google.com) and [Bing](http://www.bing.com). This automates the manual process of submitting your sitemap via [Google's webmaster tools](https://support.google.com/sites/answer/100283?hl=en) and [Bing's webmaster tools](http://www.bing.com/webmaster/help/how-to-submit-sitemaps-82a15bd4).
 
