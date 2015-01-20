@@ -7,7 +7,7 @@ Module to submit a sitemap XML file to [Google](http://www.google.com) and [Bing
 
 Use this after your site content has changed to encourage search engines to recrawl your site for Search Engine Optimisation (SEO) purposes. For example, this is useful to do after deploying a site update in [Grunt](http://gruntjs.com/) and  [Gulp](http://gulpjs.com/) scripts.
 
-If you're looking for modules to generate sitemaps, you may want to consider [grunt-sitemap for Grunt](https://www.npmjs.com/package/grunt-sitemap) and [gulp-sitemap for Gulp](https://www.npmjs.com/package/gulp-sitemap)
+If you're looking for modules to generate sitemaps, you may want to consider [grunt-sitemap for Grunt](https://www.npmjs.com/package/grunt-sitemap) and [gulp-sitemap for Gulp](https://www.npmjs.com/package/gulp-sitemap).
 
 # Usage
 
