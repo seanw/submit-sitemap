@@ -1,33 +1,38 @@
 submit-sitemap module for Node.js
 ==
 
-<img src="https://travis-ci.org/seanw/submit-sitemap.svg?branch=master" alt="Travis CI build status">
+<img src="https://travis-ci.org/seanw/submit-sitemap.svg?branch=master" alt="Travis CI build status"> <img src="https://badge.fury.io/js/submit-sitemap.svg" alt="Version badge">
 
-<img src="https://badge.fury.io/js/submit-sitemap.svg" alt="Version badge">
-
-Module to submit a sitemap XML file to [Google](http://www.google.com) and [Bing](http://www.bing.com). This automates the manual process of submitting your sitemap via [Google's webmaster tools](https://support.google.com/sites/answer/100283?hl=en) and [Bing's webmaster tools](http://www.bing.com/webmaster/help/how-to-submit-sitemaps-82a15bd4).
+Module to submit/ping a sitemap XML file to [Google](http://www.google.com) and [Bing](http://www.bing.com). This automates the manual process of submitting your sitemap via [Google's webmaster tools](https://support.google.com/sites/answer/100283?hl=en) and [Bing's webmaster tools](http://www.bing.com/webmaster/help/how-to-submit-sitemaps-82a15bd4).
 
 Use this after your site content has changed to encourage search engines to recrawl your site for Search Engine Optimisation (SEO) purposes. For example, this is useful to do after deploying a site update in [Grunt](http://gruntjs.com/) and  [Gulp](http://gulpjs.com/) scripts.
 
-If you're looking for modules to generate sitemaps, you may want to consider [grunt-sitemap for Grunt](https://www.npmjs.com/package/grunt-sitemap) and [gulp-sitemap for Gulp](https://www.npmjs.com/package/gulp-sitemap)
+If you're looking for modules to generate sitemaps, you may want to consider [grunt-sitemap for Grunt](https://www.npmjs.com/package/grunt-sitemap) and [gulp-sitemap for Gulp](https://www.npmjs.com/package/gulp-sitemap).
 
 # Usage
 
 To install:
 
-`npm install submit-sitemap --save-dev`
+    npm install submit-sitemap --save-dev
 
-To run:
+To submit your sitemap:
 
-`require('submit-sitemap').submitSitemap("http://www.example.com",  function(err) { });`
+    var submitSitemap = require('submit-sitemap').submitSitemap;
+    var sitemapUrl = "http://www.google.com/sitemap.xml";
+    
+    submitSitemap(sitemapUrl);
 
-The `err` variable of the callback function will be defined if the sitemap URL could not be reached or any of the of the sitemap submission attempts failed.
+Use the callback parameter to respond to succes and failure:
+
+    submitSitemap(sitemapUrl,  function(err) { console.error(err); });
+
+On success, the `err` variable will be undefined. If the sitemap URL could not be reached or any of the sitemap submission attempts failed, `err` will be set to an error message.
 
 # Tests
 
 To run the test suite:
 
-`npm test`
+    npm test
 
 # License
 
