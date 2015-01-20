@@ -13,7 +13,7 @@ If you're looking for modules to generate sitemaps, you may want to consider [gr
 
 To install:
 
-`npm install submit-sitemap --save-dev`
+    npm install submit-sitemap --save-dev
 
 To submit your sitemap:
 
@@ -24,7 +24,7 @@ To submit your sitemap:
 
 Use the callback parameter to respond to succes and failure:
 
-   submitSitemap(sitemapUrl,  function(err) { console.error(err); });
+    submitSitemap(sitemapUrl,  function(err) { console.error(err); });
 
 On success, the `err` variable will be undefined. If the sitemap URL could not be reached or any of the sitemap submission attempts failed, `err` will be set to an error message.
 
