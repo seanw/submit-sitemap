@@ -15,11 +15,18 @@ To install:
 
 `npm install submit-sitemap --save-dev`
 
-To run:
+To submit your sitemap:
 
-`require('submit-sitemap').submitSitemap("http://www.example.com",  function(err) { });`
+    var submitSitemap = require('submit-sitemap').submitSitemap;
+    var sitemapUrl = "http://www.google.com/sitemap.xml";
+    
+    submitSitemap(sitemapUrl);
 
-The `err` variable of the callback function will be defined if the sitemap URL could not be reached or any of the sitemap submission attempts failed.
+Use the callback parameter to respond to succes and failure:
+
+   submitSitemap(sitemapUrl,  function(err) { console.error(err); });
+
+On success, the `err` variable will be undefined. If the sitemap URL could not be reached or any of the sitemap submission attempts failed, `err` will be set to an error message.
 
 # Tests
 
