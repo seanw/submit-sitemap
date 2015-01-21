@@ -19,7 +19,7 @@ To submit your sitemap:
 
     var submitSitemap = require('submit-sitemap').submitSitemap;
     var sitemapUrl = "http://www.google.com/sitemap.xml";
-    
+
     submitSitemap(sitemapUrl);
 
 Use the callback parameter to respond to succes and failure:
