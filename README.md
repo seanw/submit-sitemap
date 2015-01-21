@@ -17,16 +17,18 @@ To install:
 
 To submit your sitemap:
 
-    var submitSitemap = require('submit-sitemap').submitSitemap;
-    var sitemapUrl = "http://www.google.com/sitemap.xml";
+    var submitSitemap  = require('submit-sitemap').submitSitemap;
+    var yourSitemapUrl = "http://www.google.com/sitemap.xml";
 
-    submitSitemap(sitemapUrl);
+    submitSitemap(yourSitemapUrl);
 
-Use the callback parameter to respond to succes and failure:
+Use the callback parameter to respond to success and failure:
 
-    submitSitemap(sitemapUrl,  function(err) { console.error(err); });
+    submitSitemap(yourSitemapUrl,  function(err) { console.error(err); });
 
-On success, the `err` variable will be undefined. If the sitemap URL could not be reached or any of the sitemap submission attempts failed, `err` will be set to an error message.
+- On success, `err` will be undefined.
+
+- On error, `err` will be set to an error message. This happens if the sitemap URL could not be reached or any of the sitemap submission attempts failed.
 
 # Tests
 
